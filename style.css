@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Poppins',sans-serif;
+    font-size: 100px;
+    background-image: linear-gradient();
+
+    
+}
+.div-overlay{
+ position:relative;
+}
+
+.card-overlay{
+    width: 100%;
+    height: 100%;
+    
+}
+.card-overlay::after,.card-overlay::before{
+    content: "";
+    position: absolute;
+    top: 0 ;
+    width: 0%;
+    height: 0%;
+    background-color: rgb(0, 0, 0,0);
+    transition: .7s;
+    z-index: 0;
+}
+.card-overlay::after{
+    left: 0;
+}
+.card-overlay::before{
+    right: 0;
+}
+.card-overlay:hover::after,.card-overlay:hover::before{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,.4);
+}
+
+.card-overlay:hover::after{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,.4);
+}
+.back-ground-img{
+    width: 100%;
+    height: 30vh;
+    background-image: url(../imge/Designer\ \(25\).jpeg);
+    background-attachment: fixed;
+    background-size:90%;
+}
+.back-ground-img-2{
+    background-image: url(../imge/Designer\ \(27\).jpeg);
+}
+.color-pro{
+    font-family: Arial, Helvetica, sans-serif; 
+    background: linear-gradient(  to right, #ff7cae, 
+            #ff7d27, gold,#ff00ff, #ff0084); 
+    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text; 
+}
+i,a{
+    text-decoration: none;
+   
+}
+
+body{
+    height: 800vh;
+}
+.carousel-img{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    padding: 0;
+
+}
+.carousel-caption{
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 60px;
+}
+.br-d-12{
+    border-radius:0 0 12px 12px;
+}
+.br-12{
+    border-radius:12px;
+}
+.br-d-25{
+    border-radius:0 0 25px 25px;
+}
+.br-25{
+    border-radius: 25px;
+}
+.white{
+    background-color: white;
+    color: white;
+}
+.xx{
+    width: 99%;
+    padding: 50px;
+}
+span.navbar-toggler-icon {
+    background-image: url(https://img.icons8.com/m_rounded/200/FFFFFF/menu.png) !important;
+}
+
+.img-overlay{
+    width: 350px;
+    height: 500px;
+    background-image: url(../imge/car-pro\ \(4\).png);
+    filter: grayscale(100%);
+    background-size: cover;
+    transition: .6s;
+    box-shadow: 8px 8px rgb(164, 164, 164);
+}
+.img-overlay-2{
+    background-image: url(../imge/proo\ car.png);
+    
+}
+.img-overlay-3{
+    background-image: url(../imge/car-pro\ \(3\).png);
+}
+.img-overlay:hover{
+    filter: grayscale(0%);
+    box-shadow: 4px 4px rgb(164, 164, 164);
+    transform: scale(.9);
+}
+
+.protfile{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+transform: translate(130px,25px);
+border: 1px white solid;
+}
+.parent{
+    overflow: auto;
+}
+.line{
+    margin-top: 8px;
+    width: 60px;
+    height: 40px;
+    border-radius: 20px 20px 20px 0;
+    background-color: rgb(55, 109, 117);
+    overflow: hidden;
+    transition: .5s;
+    
+}
+.parent:hover .line{
+    transition: .5s;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.36);
+}
+.massge{
+    font-weight: 600;
+    opacity: 0;
+    transition: 1s;
+    margin-top: 5.5px;
+}
+.parent:hover .massge{
+    opacity: 1;  
+}
+.parent-img{
+ 
+    width: 50vh;
+    height: 60vh;
+    background-color: rgb(255, 255, 255);
+    
+    position: relative;
+}
+.img-1,.img-2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+    border: 1px solid black;
+    transition: .6s;
+    
+}
+.img-1{
+   margin: -5px 10px 10px 0px;
+
+}
+.img-2{
+    margin: 2px 10px 3px 0px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+   
+}
+.parent:hover .img-2{
+    padding: 0px;
+    transition: .6s;
+    margin: 0;
+    border-radius: 12px;
+    clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+}
+.parent:hover .img-1{
+   margin: 0 ;
+    transition: .6s;
+    border-radius: 12px;
+     clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+.media-icon{transition: 1s;}
+.media-card:hover .media-icon{
+    transform: scale(1.1);
+    transition: .54s;
+    transform: translate(0,-10px);
+}
+@media (max-width:992px){
+    .p{
+      
+        padding-bottom:  8px;
+    }
+}
