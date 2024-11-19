@@ -168,3 +168,24 @@ span.navbar-toggler-icon {
 .parent{
     padding: 10px;
 }
+.icon-pro{
+    
+    top: 205px;
+    left: 90%;
+    position: fixed;
+   
+    z-index: 10;
+}
+.icon-pro a i{
+display: block;
+font-size: 35px;
+background-color: rgba(0, 0, 0, 0.916);
+color:white;
+border-radius: 30px;
+opacity: .5;
+margin: 5px;
+}
+.icon-pro a:hover i{
+
+    opacity: 1;
+}
