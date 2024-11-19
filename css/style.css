@@ -161,8 +161,7 @@ span.navbar-toggler-icon {
     .p-8 {
         padding-bottom: 10px;
     }
-.img-1,
-.img-2 {
+.parent-img{
    transform: scale(.8,1);
 }
 }
