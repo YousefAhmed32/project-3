@@ -163,7 +163,7 @@ span.navbar-toggler-icon {
     }
 .img-1,
 .img-2 {
-   transform: scale(.9);
+   transform: scale(.8,1);
 }
 }
 .parent{
